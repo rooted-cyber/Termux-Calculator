@@ -73,7 +73,7 @@ add () {
 	read n
 	if [ ! -a $n ];then
 	echo
-	echo -e "\033[92m	Answer :- $(( $m + $n ))"
+	echo -e "\033[92m	Answer :- $m + $n = $(( $m + $n ))"
 	fi
 	echo
 	add_i
@@ -93,7 +93,7 @@ add () {
 	read n
 	if [ ! -a $n ];then
 	echo
-	echo -e "\033[92m	Answer :- $(( $m - $n ))"
+	echo -e "\033[92m	Answer :- $m - $n = $(( $m - $n ))"
 	fi
 	echo
 	subtract_i
@@ -113,7 +113,7 @@ add () {
 	read n
 	if [ ! -a $n ];then
 	echo
-	echo -e "\033[92m	Answer :- $(( $m / $n ))"
+	echo -e "\033[92m	Answer :- $m / $n = $(( $m / $n ))"
 	fi
 	echo
 	divide_i
@@ -133,7 +133,7 @@ add () {
 	read n
 	if [ ! -a $n ];then
 	echo
-	echo -e "\033[92m	Answer :- $(( $m * $n ))"
+	echo -e "\033[92m	Answer :- $m * $n = $(( $m * $n ))"
 	fi
 	echo
 	multiply_i
@@ -149,7 +149,7 @@ add () {
 	read m
 	if [ ! -a $m ];then
 	echo
-	echo -e "\033[92m	Answer :- $(( $m * $m ))"
+	echo -e "\033[92m	Answer :- $m × $m = $(( $m * $m ))"
 	fi
 	echo
 	square_i
@@ -165,7 +165,7 @@ add () {
 	read m
 	if [ ! -b $m ];then
 	echo
-	echo -e "\033[92m	Answer :- $(( $m * $m * $m ))"
+	echo -e "\033[92m	Answer :- $m × $m × $m = $(( $m * $m * $m ))"
 	fi
 	echo
 	cube_i
@@ -196,6 +196,7 @@ add () {
 		clear
 		Termux_Calculator_i
 		myt
+		wget https://raw.githubusercontent.com/rooted-cyber/Termux-Calculator/master/ver.txt > /dev/null 2>&1
 printf "\n\033[93m 【 1 】\033[92m Addition"
 printf "\n\033[93m 【 2 】\033[92m Subtraction"
 printf "\n\033[93m 【 3 】\033[92m Division"
@@ -206,6 +207,12 @@ printf "\n\033[93m 【 7 】\033[92m Table"
 printf "\n\033[93m 【 8 】\033[92m Convert"
 printf "\n\033[93m 【 9 】\033[92m Update tool"
 printf "\n\n\n\033[96m"
+printf "\n\n[+] Current Version :- 1.0\n"
+cat ver.txt
+rm -f ver.txt
+echo
+echo
+echo -e "\033[91m"
 printf %s "Select >> "
 read math
 case $math in
@@ -226,6 +233,7 @@ start () {
 	apt upgrade
 	apt install figlet
 	apt install toilet
+	apt install wget
 	clear
 	cp -f math $PREFIX/bin
 	chmod 777 $PREFIX/bin/math
