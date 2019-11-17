@@ -787,7 +787,7 @@ printf "\n\033[93m 【 8 】\033[92m Convert"
 printf "\n\033[93m 【 9 】\033[92m BODMAS solution"
 printf "\n\033[93m 【 10 】\033[92m Update tool"
 printf "\n\n\n\033[96m"
-printf "\n\n[+] Current Version :- 1.0\n"
+printf "\n\n[+] Current Version :- 1.2\n"
 cat ver.txt
 rm -f ver.txt
 echo
