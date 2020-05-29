@@ -1,7 +1,7 @@
 metre () {
 	clear
 	metre_i
-	echo -e -n "\033[96m Enter Metre :-  "
+	echo -e -n "\033[96m Enter Metre :-\033[1;97m "
 	read g
 	if [ ! -a $g ];then
 	echo
@@ -19,7 +19,7 @@ metre () {
 centimetre () {
 	clear
 	centimetre_i
-	echo -e -n "\033[96m Enter Centimetre :-  "
+	echo -e -n "\033[96m Enter Centimetre :-\033[1;97m "
 	read g
 	if [ ! -a $g ];then
 	echo
@@ -37,7 +37,7 @@ centimetre () {
 	gram () {
 	clear
 	gram_i
-	echo -e -n "\033[96m Enter Gram :-  "
+	echo -e -n "\033[96m Enter Gram :-\033[1;97m "
 	read g
 	if [ ! -a $g ];then
 	echo
@@ -55,7 +55,7 @@ centimetre () {
 kilogram () {
 	clear
 	kilogram_i
-	echo -e -n "\033[96m Enter Kilogram :-  "
+	echo -e -n "\033[96m Enter Kilogram :-\033[1;97m "
 	read g
 	if [ ! -a $g ];then
 	echo
@@ -73,7 +73,7 @@ kilogram () {
 	metre2 () {
 	clear
 	metre2_i
-	echo -e -n "\033[96m Enter Metre :-  "
+	echo -e -n "\033[96m Enter Metre :-\033[1;97m "
 	read g
 	if [ ! -a $g ];then
 	echo
@@ -91,7 +91,7 @@ kilogram () {
 kilometre () {
 	clear
 	kilometre_i
-	echo -e -n "\033[96m Enter Kilometre :-  "
+	echo -e -n "\033[96m Enter Kilometre :-\033[1;97m "
 	read g
 	if [ ! -a $g ];then
 	echo
@@ -109,7 +109,7 @@ kilometre () {
 	dollar () {
 	clear
 	dollar_i
-	echo -e -n "\033[96m Enter Dollar :-  "
+	echo -e -n "\033[96m Enter Dollar :-\033[1;97m "
 	read g
 	if [ ! -a $g ];then
 	echo
@@ -127,7 +127,7 @@ kilometre () {
 rupees () {
 	clear
 	rupees_i
-	echo -e -n "\033[96m Enter Rupees :-  "
+	echo -e -n "\033[96m Enter Rupees :-\033[1;97m "
 	read g
 	if [ ! -a $g ];then
 	echo
@@ -145,7 +145,7 @@ rupees () {
 	paisa () {
 	clear
 	paisa_i
-	echo -e -n "\033[96m Enter Paisa :-  "
+	echo -e -n "\033[96m Enter Paisa :-\033[1;97m "
 	read g
 	if [ ! -a $g ];then
 	echo
@@ -163,7 +163,7 @@ rupees () {
 rupees2 () {
 	clear
 	rupees2_i
-	echo -e -n "\033[96m Enter Rupees :-  "
+	echo -e -n "\033[96m Enter Rupees :-\033[1;97m "
 	read g
 	if [ ! -a $g ];then
 	echo
@@ -179,9 +179,9 @@ rupees2 () {
 	math
 	}
 	fahrenheit () {
-		clear
-		fahrenheit_i
-		echo -e -n "\033[96m	Enter Fahrenheit :- "
+		#clear
+		#fahrenheit_i
+		echo -e -n "\n\033[96m	Enter Fahrenheit :-\033[1;97m "
 		read f
 		if [ $f ];then
 		echo
@@ -192,19 +192,12 @@ rupees2 () {
 		echo "Formula :-"
 		echo
 		echo "( °F - 32 ) * 5/9"
-		echo
-		echo
-		fahrenheit_i
-		echo
-		echo
-		echo "Press enter to home"
-		read
-		math
+		fahrenheit
 		}
 		bit () {
 		clear
 		bit_i
-		echo -e -n "\033[96m	Enter Bit :- "
+		echo -e -n "\033[96m	Enter Bit :-\033[1;97m "
 		read f
 		if [ $f ];then
 		echo
@@ -223,7 +216,7 @@ rupees2 () {
 		byte () {
 		clear
 		byte_i
-		echo -e -n "\033[96m	Enter Bytes :- "
+		echo -e -n "\033[96m	Enter Bytes :-\033[1;97m "
 		read f
 		if [ $f ];then
 		echo
@@ -240,9 +233,9 @@ rupees2 () {
 		math
 		}
 		celsius () {
-		clear
-		celsius_i
-		echo -e -n "\033[96m	Enter Celsius :- "
+		#clear
+		#celsius_i
+		echo -e -n "\n\033[96m	Enter Celsius :-\033[1;97m "
 		read f
 		if [ $f ];then
 		echo
@@ -253,19 +246,12 @@ rupees2 () {
 		echo "Formula :-"
 		echo
 		echo "( ℃ * 9/5 ) + 32"
-		echo
-		echo
-		celsius_i
-		echo
-		echo
-		echo "Press enter to home"
-		read
-		math
+		celsius
 		}
 		kilobit () {
 		clear
 		kilobit_i
-		echo -e -n "\033[96m	Enter Kilobit :- "
+		echo -e -n "\033[96m	Enter Kilobit :-\033[1;97m "
 		read f
 		if [ $f ];then
 		echo
@@ -284,7 +270,7 @@ rupees2 () {
 		kilobyte () {
 		clear
 		kilobyte_i
-		echo -e -n "\033[96m	Enter Kilobytes :- "
+		echo -e -n "\033[96m	Enter Kilobytes :-\033[1;97m "
 		read f
 		if [ $f ];then
 		echo
@@ -303,7 +289,7 @@ rupees2 () {
 		megabit () {
 		clear
 		megabit_i
-		echo -e -n "\033[96m	Enter Megabit :- "
+		echo -e -n "\033[96m	Enter Megabit :-\033[1;97m "
 		read f
 		if [ $f ];then
 		echo
@@ -322,7 +308,7 @@ rupees2 () {
 		megabyte () {
 		clear
 		megabyte_i
-		echo -e -n "\033[96m	Enter Bytes :- "
+		echo -e -n "\033[96m	Enter Bytes :-\033[1;97m "
 		read f
 		if [ $f ];then
 		echo
@@ -342,7 +328,7 @@ rupees2 () {
 		gijabit () {
 		clear
 		gijabit_i
-		echo -e -n "\033[96m	Enter Gijabit :- "
+		echo -e -n "\033[96m	Enter Gijabit :-\033[1;97m "
 		read f
 		if [ $f ];then
 		echo
@@ -361,7 +347,7 @@ rupees2 () {
 		gijabyte () {
 		clear
 		gijabyte_i
-		echo -e -n "\033[96m	Enter Gijaytes :- "
+		echo -e -n "\033[96m	Enter Gijaytes :-\033[1;97m "
 		read f
 		if [ $f ];then
 		echo
@@ -559,6 +545,7 @@ convert_i () {
 	20)gijabit ;;
 	21)math ;;
 	22)exit 0 ;;
+	*)convert ;;
 	esac
 	}
 
@@ -567,15 +554,14 @@ convert_i () {
 
 
 BODMAS () {
-	clear
-	BODMAS_i
-	echo -e -n "	\033[96m Enter BODMAS question :-  "
+	#clear
+	#BODMAS_i
+	echo -e -n "\n	\033[96m Enter BODMAS question :-\033[1;97m "
 	read B
 	if [ ! -b $B ];then
 	echo
 	echo -e "\033[92m	Answer :- $B = $(( $B ))"
-	echo
-	BODMAS_i
+	BODMAS
 	fi
 	}
 	BODMAS_i () {
@@ -641,121 +627,90 @@ cube_i () {
 	    printf "\033[93m\n\n========================================\n\n\n"
 	}
 add () {
-	clear
-	add_i
-	echo -e -n "\033[96m	Enter 1st number :- "
+	#clear
+	#add_i
+	echo -e -n "\n\033[96m	Enter 1st number :-\033[1;97m "
 	read m
 	if [ ! -b $m ];then
-	echo -n "	Enter 2nd Number :- "
+	echo -e -n "\033[1;96m	Enter 2nd Number :-\033[1;97m "
 	fi
 	read n
 	if [ ! -a $n ];then
 	echo
 	echo -e "\033[92m	Answer :- $m + $n = $(( $m + $n ))"
 	fi
-	echo
-	add_i
+	#echo
+	add
 	echo
 	echo "Press enter for home"
 	read
 	math
 	}
 	subtract () {
-		clear
-		subtract_i
-	echo -e -n "\033[96m	Enter 1st number :- "
+		#clear
+		#subtract_i
+	echo -e -n "\n\033[96m	Enter 1st number :-\033[1;97m "
 	read m
 	if [ ! -b $m ];then
-	echo -n "	Enter 2nd Number :- "
+	echo -e -n "\033[1;96m	Enter 2nd Number :-\033[1;97m "
 	fi
 	read n
 	if [ ! -a $n ];then
 	echo
 	echo -e "\033[92m	Answer :- $m - $n = $(( $m - $n ))"
 	fi
-	echo
-	subtract_i
-	echo
-	echo "Press enter for home"
-	read
-	math
+	subtract
 	}
 	divide () {
-		clear
-		divide_i
-	echo -e -n "\033[96m	Enter 1st number :- "
+	echo -e -n "\n\033[96m	Enter 1st number :-\033[1;97m "
 	read m
 	if [ ! -b $m ];then
-	echo -n "	Enter 2nd Number :- "
+	echo -e -n "\033[1;96m	Enter 2nd Number :-\033[1;97m "
 	fi
 	read n
 	if [ ! -a $n ];then
 	echo
 	echo -e "\033[92m	Answer :- $m / $n = $(( $m / $n ))"
 	fi
-	echo
-	divide_i
-	echo
-	echo "Press enter for home"
-	read
-	math
+	divide
 	}
 	multiply () {
-		clear
-		multiply_i
-	echo -e -n "\033[96m	Enter 1st number :- "
+		#clear
+		#multiply_i
+	echo -e -n "\n\033[96m	Enter 1st number :-\033[1;97m "
 	read m
 	if [ ! -b $m ];then
-	echo -n "	Enter 2nd Number :- "
+	echo -e -n "\033[1;96m	Enter 2nd Number :-\033[1;97m "
 	fi
 	read n
 	if [ ! -a $n ];then
 	echo
 	echo -e "\033[92m	Answer :- $m * $n = $(( $m * $n ))"
 	fi
-	echo
-	multiply_i
-	echo
-	echo "Press enter for home"
-	read
-	math
+	multiply
 	}
 	square () {
-		clear
-		square_i
-	echo -e -n "\033[96m	Enter  number :- "
+	echo -e -n "\n\n\033[96m	Enter  number :-\033[1;97m "
 	read m
 	if [ ! -a $m ];then
-	echo
-	echo -e "\033[92m	Answer :- $m × $m = $(( $m * $m ))"
+	echo -e "\n\n\033[92m	Answer :- $m × $m = $(( $m * $m ))"
 	fi
-	echo
-	square_i
-	echo
-	echo "Press enter for home"
-	read
-	math
+	square
 	}
 	cube () {
-		clear
-		cube_i
-	echo -e -n "\033[96m	Enter number :- "
+	echo -e -n "\n\n\033[96m	Enter number :- \033[0m"
 	read m
 	if [ ! -b $m ];then
-	echo
-	echo -e "\033[92m	Answer :- $m × $m × $m = $(( $m * $m * $m ))"
+	echo -e "\n\n\033[92m	Answer :- $m × $m × $m = $(( $m * $m * $m ))"
 	fi
-	echo
-	cube_i
-	echo
-	echo "Press enter for home"
-	read
-	math
+	cube
+	
 	}
 	table () {
-		clear
-		table_i
-		echo -e -n "\033[92m	Enter number :-  "
+		#table_i
+		echo
+		echo
+		echo -e -n "\033[92m	Enter number :-  \033[0m"
 		read a
 		if [ ! -v $a ];then
 		echo
@@ -763,37 +718,26 @@ add () {
 		cd ~/Termux-Calculator
 		bash .a.sh $a
 		fi
-		echo
-		table_i
-		echo
-		echo -e "\033[95m Press enter to home"
-		read
-		math
+		table
 		}
 	math () {
 		clear
 		Termux_Calculator_i
 		#default_math="math"
 		myt
-		wget https://raw.githubusercontent.com/rooted-cyber/Termux-Calculator/master/ver.txt > /dev/null 2>&1
-printf "\n\033[93m 【 1 】\033[92m Addition"
-printf "\n\033[93m 【 2 】\033[92m Subtraction"
-printf "\n\033[93m 【 3 】\033[92m Division"
-printf "\n\033[93m 【 4 】\033[92m Multiplication"
-printf "\n\033[93m 【 5 】\033[92m Square"
-printf "\n\033[93m 【 6 】\033[92m Cube"
-printf "\n\033[93m 【 7 】\033[92m Table"
-printf "\n\033[93m 【 8 】\033[92m Convert"
-printf "\n\033[93m 【 9 】\033[92m BODMAS solution"
-printf "\n\033[93m 【 10 】\033[92m Update tool"
-printf "\n\n\n\033[96m"
-printf "\n\n[+] Current Version :- 1.2\n"
-cat ver.txt
-rm -f ver.txt
-echo
-echo
-echo -e "\033[91m"
-printf %s "Select >> "
+		#wget https://raw.githubusercontent.com/rooted-cyber/Termux-Calculator/master/ver.txt > /dev/null 2>&1
+printf "\n\033[1;92m[\033[0m1\033[1;92m]\033[1;93m  Addition"
+printf "\n\033[1;92m[\033[0m2\033[1;92m]\033[1;93m  Subtraction"
+printf "\n\033[1;92m[\033[0m3\033[1;92m]\033[1;93m  Division"
+printf "\n\033[1;92m[\033[0m4\033[1;92m]\033[1;93m  Multiplication"
+printf "\n\033[1;92m[\033[0m5\033[1;92m]\033[1;93m  Square"
+printf "\n\033[1;92m[\033[0m6\033[1;92m]\033[1;93m  Cube"
+printf "\n\033[1;92m[\033[0m7\033[1;92m]\033[1;93m  Table"
+printf "\n\033[1;92m[\033[0m8\033[1;92m]\033[1;93m  Convert"
+printf "\n\033[1;92m[\033[0m9\033[1;92m]\033[1;93m  BODMAS solution"
+printf "\n\033[1;92m[\033[0m10\033[1;92m]\033[1;93m  Update tool"
+printf "\n\033[1;92m[\033[0m11\033[1;92m]\033[1;93m Exit\n\n\n"
+echo -e -n "\033[1;92mTermux\033[0m@\033[1;96mCalculator\033[1;97m -->> "
 read math
 #math="${math:-{default_math}}"
 case $math in
@@ -807,6 +751,7 @@ case $math in
 8|08)convert ;;
 9|09)BODMAS ;;
 10)update ;;
+*)math ;;
 esac
 }
 start () {
@@ -823,14 +768,9 @@ start () {
 	echo -e "\033[96m Now you can start this command :- math "
 	}
 clear
-setup
-default_matt="N"
-
-echo -e -n "\033[96m Do you want to setup\033[91m (\033[93m Y/N\033[91m ) "
-read matt
-#matt="${matt:-${default_matt}}"
-matt="${matt:-${default_matt}}"
-case $matt in
-y|Y)start ;;
-n|N)math ;;
-esac
+cd $PREFIX/bin
+if [ -e math ];then
+math
+else
+start
+fi
