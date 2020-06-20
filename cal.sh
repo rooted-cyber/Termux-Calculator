@@ -612,8 +612,8 @@ add_i () {
 	printf "\033[93m\n\n========================================\n\n\n"
 	}
 	Termux_Calculator_i () {
-	printf "\033[93m\n=========================================\n\n"
-	figlet -f small Calculator | toilet -f term -F gay
+	printf "\033[93m\n=========================================\033[1;96m\n\n"
+	figlet -f Calculator
 	printf "\033[93m\n\n========================================\n\n\n"
 	}
 cube_i () {
@@ -754,23 +754,20 @@ case $math in
 *)math ;;
 esac
 }
-start () {
-	clear
-	apt update
-	apt upgrade
-	apt install figlet
-	apt install toilet
-	apt install wget
-	clear
-	cp -f math $PREFIX/bin
-	chmod 777 $PREFIX/bin/math
-	clear
-	echo -e "\033[96m Now you can start this command :- math "
+a() {
+	cd $PREFIX/bin
 	}
-clear
-cd $PREFIX/bin
-if [ -e math ];then
-math
-else
-start
-fi
+	b() {
+		cd ~/Termux-Calculator
+		}
+		ch() {
+			a
+			if [ -e figlet ];then
+			echo
+			else
+			printf "\n\033[1;92m installing figlet \n"
+			pkg install figlet
+			fi
+			}
+			ch
+			math
