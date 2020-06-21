@@ -613,7 +613,7 @@ add_i () {
 	}
 	Termux_Calculator_i () {
 	printf "\033[93m\n=========================================\033[1;96m\n\n"
-	figlet -f Calculator
+	figlet Calculator
 	printf "\033[93m\n\n========================================\n\n\n"
 	}
 cube_i () {
